@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/regis.css">
+    
     <title>Lab_1</title>
 
 </head>
@@ -16,9 +18,8 @@
         <nav class="head1">
             <div class="cont">
                 <ul class="child">
-                    <li class="list">
-                        
-                        <a href="">Lab_1</a>
+                    <li class="list">                       
+                        <a href="lab1index.html">Lab_1</a>
                     </li>
                     <li ><a href="lab1index.html">Home</a></li>
                     <li ><a href="About.html">About</a></li>
@@ -31,6 +32,211 @@
         </nav>
 
     </header>
+    <!--  -->
+    
+    <div class="main">
+        <h1>Registration </h1>
+    </div>
+    <div class="container1">
+        <form action="" method="post">
+
+
+
+        <table class="tb" cellpadding="4">
+            <tr>
+                <td>
+                    <label for="text">FIRST NAME</label>
+                </td>
+                <td>
+                    <input type="text" name="" placeholder="Please Enter name" maxlength="30">
+
+                    (max 30 character a-z and A-Z)
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="text">LAST NAME</label>
+                </td>
+                <td>
+                    <input type="text" name="" placeholder="Please Enter name" maxlength="30">
+
+                    (max 30 character a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="text">DATE OF BIRTH</label>
+                </td>
+                <td>
+                    <input type="date" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="text">EMAIL ID</label>
+                </td>
+                <td>
+                    <input type="email" placeholder="Enter Email address">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="text">MOBILE NUMBER</label>
+                </td>
+                <td>
+
+                    <input type="number" maxlength="10" placeholder="Enter Mobile number">
+
+                    (10 digit number)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="text">GENDER</label>
+                </td>
+                <td>
+                    MALE<input type="radio" name="gender" id="">
+                    FEMALE<input type="radio" name="gender" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="text">ADDRESS</label>
+                </td>
+                <td>
+                    <textarea name="textaddress" id="" cols="30" rows="3">
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="text">CITY</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter city name" maxlength="30">
+
+                    (max 30 character a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="text">PIN CODE</label>
+                </td>
+                <td>
+                    <input type="number" placeholder="Enter pincode" maxlength="30">
+
+                    (6 digit number)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="text">STATE</label>
+                </td>
+                <td>
+                    <input type="text" name="" placeholder="Enter state" maxlength="30">
+
+                    (max 30 character a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="text">COUNTRY</label>
+                </td>
+                <td>
+                    <input type="text" name="" placeholder="Enter country" maxlength="30">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="text">HOBBIES</label>
+                </td>
+                <td>
+                    Drawing <input type="checkbox" value="drawing">
+                    Singing <input type="checkbox" value="Singing">
+                    Dancing <input type="checkbox" value="Dancing">
+                    Sketching <input type="checkbox" value="Sketching"><br>
+                    Other <input type="checkbox" value="other"><input type="text">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="text">QUALIFICATION</label>
+                </td>
+                <td>
+                    <table>
+                        <tr class="tb1">
+                            <td>SI.NO</td>
+                            <td>EXAMINATION</td>
+                            <td>BOARD</td>
+                            <td>PERCENTAGE</td>
+                            <td>YEAR OF PASSING</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>CLASS X</td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="number" name="" maxlength="10" id=""></td>
+                            <td><input type="number" name="" maxlength="4" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>CLASS XI</td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="number" name="" maxlength="10" id=""></td>
+                            <td><input type="number" name="" maxlength="4" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Graduation</td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="number" name="" maxlength="10" id=""></td>
+                            <td><input type="number" name="" maxlength="4" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Master</td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="number" name="" maxlength="10" id=""></td>
+                            <td><input type="number" name="" maxlength="4" id=""></td>
+                        </tr>
+                        <tr class="tb1">
+                            <td colspan="3"></td>
+                            <td>(10 char max)</td>
+                            <td>(upto 2 decimal)</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="text">COURSES <br> APPLIED FOR</label>
+                </td>
+                <td>
+                    BCA<input type="radio" name="Course" id="">
+                    B.Com<input type="radio" name="Course" id="">
+                    B.Sc<input type="radio" name="Course" id="">
+                    B.A<input type="radio" name="Course" id="">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">
+                    <div class="btn-div">
+                        
+                        <button type="submit" href="#" class="btn" >SUBMIT</button>
+ 
+                        <button type="reset" class="btn">RESET</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+        
+    <!--  -->
     <!-- Footer Of Website -->
     <footer>
         <div class="foot">   

@@ -1,0 +1,22 @@
+:root {
+    --bg:rgb(9, 40, 53);
+    --head:#177caa;
+  }
+
+.tb{
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgb(204, 225, 245);
+}
+.btn{
+   padding: 10px;
+   border-radius: 10px;
+   margin: 0 20px 0 20px;
+   border: 2px solid var(--head);
+}
+.btn:hover{  
+   cursor: pointer;
+   box-shadow: 2px 5px 10px  var(--bg);
+}

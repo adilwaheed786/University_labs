@@ -1,3 +1,8 @@
+
+:root {
+    --bg:rgb(9, 40, 53);
+    --head:#177caa;
+  }
 *{
     margin: 0px;
     box-sizing: border-box; 
@@ -16,7 +21,7 @@ li{
     font-size: 25px;     
 }
 .head1{
-    background-color: rgb(32, 61, 66);
+    background-color: var(--bg);
     
 }
 .child>li a{
@@ -25,18 +30,23 @@ li{
   padding: 10px;
   background-color: white;
   text-align: center;
-  color: rgb(207, 54, 34);
+  color: rgb(0, 0, 0);
 
 }
 .child>li a:hover{
-    background-color: rgb(70, 19, 19);
+    background-color: rgb(211, 146, 26);
     color: white;
     border-radius: 50px;
     text-decoration: none;   
 }
+.main>h1{
+    margin:  20px 50px 20px 50px;
+    color: var(--head);
+    border-bottom: 6px solid var(--head);
+}
 /* Footer Section Css */
 footer{
-    background-color: rgb(32, 61, 66);
+    background-color: var(--bg);
     padding: 20px;
 }
 .last{
@@ -52,7 +62,7 @@ footer{
   color: rgb(0, 0, 0);
 }
 .last>li a:hover{
-    background-color: rgb(99, 57, 57);
+    background-color: rgb(168, 24, 24);
     color: white;
     border-radius: 50px;
     text-decoration: none;   
