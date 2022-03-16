@@ -2,7 +2,6 @@
     --bg:rgb(9, 40, 53);
     --head:#177caa;
   }
-
 .tb{
     margin: 20px auto;
     border: 1px solid black;
@@ -18,5 +17,7 @@
 }
 .btn:hover{  
    cursor: pointer;
+   background-color: var(--head);
+   color: white;
    box-shadow: 2px 5px 10px  var(--bg);
 }
