@@ -1,0 +1,37 @@
+.children{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.same{
+    margin: 10px 5px;
+}
+#table{
+    border-radius: 5px;
+    border: none;
+    border-bottom:  3px solid orangered;
+    
+}
+#table,#btn{
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#btn{
+   /* color: orangered;  */
+   background-color: rgba(64, 226, 255, 0.445);
+   border: none;
+   border-radius: 5px;
+
+}
+#btn:hover{
+    color: white;
+    background-color: orangered;
+}
+.tableprint{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}

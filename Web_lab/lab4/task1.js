@@ -10,7 +10,6 @@
 let first = parseInt(prompt("Enter a First Value"));
 let second =parseInt(prompt("Enter a Second Value"));
 var operation =prompt("which operation does it want to perform (+,-,/,*,++,--,%)");
-
 switch (operation) {
     case '+':
         let add=first+second;

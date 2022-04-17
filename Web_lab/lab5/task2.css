@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid orange; */
+    font-family: 'Raleway', sans-serif;
+}
+.main{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding: 30px;
+}
+.heading{
+    text-align: center;
+    font-size: 40px;
+}
+.children{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.same{
+    margin: 10px 5px;
+}
+#input{
+    border-radius: 5px;
+    border: none;
+    border-bottom:  3px solid orangered;
+    
+}
+#input2{
+    border-radius: 5px;
+    border: none;
+    border-bottom:  3px solid orangered;
+    
+}
+#input,#btn,#input2{
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#btn{
+   /* color: orangered;  */
+   background-color: rgba(64, 226, 255, 0.445);
+   border: none;
+   border-radius: 5px;
+
+}
+#btn:hover{
+    color: white;
+    background-color: orangered;
+}
+
+ul{
+    padding: 5px;
+    list-style: none;
+}
+ul>li{
+    padding: 10px;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+li:hover{
+    background-color: rgba(64, 226, 255, 0.445);
+    color: orangered;
+}
+#delete{
+    padding: 5px;
+    background-color: rgba(8, 111, 143, 0.781);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+}
+#delete:hover{
+    background-color: white;
+    color: rgba(8, 111, 143, 0.781);
+}
+.home{
+    /* background-color: aqua; */
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+}
+a:hover{
+    background-color: orangered;
+    color: white;
+    /* background-color: rgb(21, 83, 112); */
+}

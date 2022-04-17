@@ -8,7 +8,7 @@
     /* background-color: aqua; */
     display: flex;
     justify-content: center;
-    margin: 50px;
+    margin: 50px 50px 0 50px;
     padding: 30px;
 }
 .heading{
@@ -17,7 +17,11 @@
 }
 .children{
     margin: 20px;
-  
+    display: flex;
+    justify-content: center;
+}
+.same{
+    margin: 0 5px;
 }
 #input{
     border-radius: 5px;
@@ -57,12 +61,12 @@ ul>li{
     text-transform: capitalize;
 }
 li:hover{
-    background-color: rgba(64, 226, 255, 0.445);
-    color: orangered;
+    background-color: rgba(0, 78, 122, 0.705);
+    color: rgb(255, 255, 255);
 }
 #delete{
     padding: 5px;
-    background-color: rgba(8, 111, 143, 0.781);
+    background-color: rgb(204, 0, 0);
     border-radius: 5px;
     color: white;
     font-weight: bold;
@@ -71,6 +75,25 @@ li:hover{
     border: none;
 }
 #delete:hover{
-    background-color: white;
-    color: rgba(8, 111, 143, 0.781);
+    color: white;
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.home{
+    /* background-color: aqua; */
+    text-align: center;
+
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+}
+a:hover{
+    background-color: orangered;
+    color: white;
+    /* background-color: rgb(21, 83, 112); */
 }

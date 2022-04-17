@@ -15,13 +15,11 @@
     }
     else if(alaram==='D' || alaram==='d')
     {
-        alert("Good Morning")
-        
+        alert("Good Morning")    
     }
     else
     {
         alert("Wrong Input Provided");
-        
     }
 
   
