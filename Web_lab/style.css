@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.884);
+    /* background-color: rgb(255, 255, 221); */
+}
+
+h1 {
+    font-size: 50px;
+    padding: 5px;
+    color: orangered;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+}
+
+h3 {
+    font-size: 20px;
+    padding: 5px;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+}
+
+h5 {
+    font-size: 15px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+h4 {
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgba(153, 0, 167, 0.795);
+    color: white;
+    border-radius: 5px;
+}
+
+div {
+    /* background: rgb(252, 252, 252); */
+    margin: 10px;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+a {
+    /* background-color: rgb(4, 27, 41); */
+    background-color: white;
+    padding: 25px;
+    margin: 5px;
+    list-style: none;
+    border-radius: 5px;
+    color: rgb(255, 115, 0);
+    text-decoration: none;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.884);    
+}
+
+a:hover {
+    background-color: rgba(255, 68, 0, 0.753);
+    color: white;
+}
