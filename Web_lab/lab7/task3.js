@@ -1,10 +1,16 @@
-var age=document.getElementById('input');
-function checkage()
+var inp=document.getElementById('input');
+var result=document.getElementById('input4');
+function check()
 {
-    if(age.value.length>0)
+    if(inp.value.length>0)
     {
-        message = age.value >= 18 ? 'You can drive.' : 'You cannot drive.';
-        alert(message);
-        age.value="";
+        const compose = (f,g) => a => f(g(a));
+        const g = (x) => x + 15
+        const f = (x) => x / 2
+        const fg = compose(f,g)
+        result.value=fg(inp.value);
+        inp.value="";
     }   
 }
+
+
