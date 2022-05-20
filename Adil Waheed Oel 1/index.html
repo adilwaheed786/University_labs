@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styling -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/x-icon" href="Assets/icons8-portfolio-64.png">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- FontAwosome Icon -->
+    <link rel="stylesheet" href="Assets/fontawesome-free-6.1.1-web/css/all.css">
+    <!-- Bootstrap Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>By Adil Waheed</title>
+</head>
+
+<body>
+    <!--  Header Section-->
+    <header>
+        
+        <nav class="head1">    
+            <div class="cont">
+                <ul class="child">
+                    <a href="#home" class="hide active"><i class="fa-solid fa-house"></i> Home</i></a>
+                    <a href="#About" class="hide"> <i class="fa-solid fa-user-check"></i> Register</a>
+                    <a href="#projects"class="hide"><i class="fa-solid fa-diagram-project"></i> Services</a>
+                    <a href="#contact" class="hide"><i class="fa-solid fa-phone"></i> Contact</a>
+                    <a href="#review" class="hide"><i class="fa-solid fa-phone"></i> Review</a>
+                    <!-- <li class="hide"><a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</i></a></li>              
+                    <li class="hide"><a href="#About"> <i class="fa-solid fa-user-check"></i> About</a></li>
+                    <li class="hide"><a href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+                    <li class="hide"><a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a></li>                 -->
+                    <li class="show"><a href=""><i class="fa-solid fa-sailboat"></i> Star caters</a></li>
+                    <li id="togle"><a href="javascript:openNav()" ><i  class="fa-solid fa-bars"></i></a></li>
+                </ul>             
+            </div>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="#home" onclick="openNav(); return true;" class="hide acti"><i class="fa-solid fa-house"></i> Home</i></a>
+            <a href="#About" onclick="openNav(); return true;"  class="hide"> <i class="fa-solid fa-user-check"></i> Register</a>
+            <a href="#projects" onclick="openNav(); return true;" class="hide"><i class="fa-solid fa-diagram-project"></i> Services</a>
+            <a href="#contact" onclick="openNav(); return true;" class="hide"><i class="fa-solid fa-phone"></i> Contact</a>
+            <a href="#review" onclick="openNav(); return true;" class="hide"><i class="fa-solid fa-phone"></i> Review</a>
+          </div>
+          
+    </header>  
+    <!-- Body -->
+    <main>
+        
+        <!-- Cover Page -->
+        <section id="home">
+            <div class="container-fluid">
+                <div class="row p-5 d-flex align-items-center justify-content-center">
+                    <div class="col-lg-6 col-md-6 ">
+                        <div>
+                            
+                            <h1>Star Caters</h1>
+                            <p class="para"> He Offers
+                                <span class="content"></span>
+                            </p>
+                            <div class="resume">
+                                <h2 class="bottom">Book Your Order</h2>
+                                <div class="btn-parent">
+                                    <a href="#projects" target="_blank"
+                                        class="btn">Order Now</a>
+                                </div>
+                            </div>
+                            <div class="space">
+                                <div class="resume">
+                                    <h2 class="bottom">Follow Us</h2>
+                            <a href="" target="_blank" class="fb"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="" target="_blank" class="inst"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-8 align-items-center justify-content-center ">                         
+                                <img  src="Assets/cater2.jpg" class="img-fluid image" alt="" srcset="">                                                 
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+        <!-- About -->
+        <section id="About">
+            <div class="container-fluid">
+                 <div class="row p-5 d-flex align-items-center justify-content-center">
+                    
+                    <h1>Registration Form</h1>
+                <form method="post" name="reg_form" onsubmit="validateform()">
+                    <div style="margin: 50px;">
+                    <div class="form-group">
+                      <label for="fullname">Full Name</label>
+                      <input type="text" class="form-control " name="fullname" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email Address</label>
+                      <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone(enter only 10 digit numbers)</label>
+                        <input type="number" class="form-control"   name="ph" placeholder="Phone Number" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="text" id="pwd" class="form-control" onkeyup="validatePassword(this.value);" placeholder="Password" required/><span id="msg"></span>            
+                      </div>
+                      <div class="form-group">
+                        <label for="Confirmpwd">Confirm Password</label>
+                        <input type="password" class="form-control" name="Confirmpwd" placeholder=" Confirm Password" required>
+                      </div>
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-info m-2" name="submit" value="Register">Register</button>
+                      </div>
+                    </div>
+                  </form>
+                  </div>
+            </div>         
+        </section>
+        <!-- Section 3 -->
+        <section id="projects">
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-lg-12 col-md-12 col-sm-6">
+                        <div class="resume box proj">
+                            <h2 class="bottom"> <i class="fa-solid fa-diagram-project"></i> Services</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cen">
+                    <div class="col-lg-3 col-md-4 col-sm-6 cen">
+                        <div class="child1 ">
+                            <img src="Assets/pro1.jpg" class="img-fluid" alt="img" srcset="">
+                            <div class="effect">
+                                <div>
+                                    <h3>Rice</h3>       
+                                    <a href="#" id="1" target="_blank">Order</a> 
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 cen">
+                        <div class="child1 ">
+                            <img src="Assets/pro2.jpg" alt="img" srcset="">
+                            <div class="effect">
+                                <div>
+                                    <h3>Burger</h3>       
+                                    <a href="#" id="2" target="_blank">Order</a> 
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 cen">
+                        <div class="child1 ">
+                            <img src="Assets/pro3.jpg" alt="img" srcset="">
+                            <div class="effect">
+                                <div>
+                                    <h3>Cake</h3>       
+                                    <a href="#" id="3" target="_blank">Order</a> 
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-3 col-md-4 col-sm-6 cen">
+                        <div class="child1 ">
+                            <img src="Assets/pro4.jpg" alt="img" srcset="">
+                            <div class="effect">
+                                <div>
+                                    <h3>Cake Mini</h3>       
+                                    <a href="#" id="4" target="_blank">Order</a> 
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-3 col-md-4 col-sm-6 cen">
+                        <div class="child1 ">
+                            <img src="Assets/pro5.jpg" alt="img" srcset="">
+                            <div class="effect">
+                                <div>
+                                    <h3>Fruit</h3>       
+                                    <a href="#" id="5" target="_blank">Order</a> 
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-3 col-md-4 col-sm-6 cen">
+                        <div class="child1 ">
+                            <img src="Assets/pro6.jpg" alt="img" srcset="">
+                            <div class="effect">
+                                <div>
+                                    <h3>Chips</h3>       
+                                    <a href="#" id="6" target="_blank">Order</a> 
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-3 col-md-4 col-sm-6 cen">
+                        <div class="child1 ">
+                            <img src="Assets/pro7.jpg" alt="img" srcset="">
+                            <div class="effect">
+                                <div>
+                                    <h3>Parata</h3>       
+                                    <a href="#" id="7" target="_blank">Order</a> 
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-3 col-md-4 col-sm-6 cen">
+                        <div class="child1 ">
+                            <img src="Assets/pro8.jpg" alt="img" srcset="">
+                            <div class="effect">
+                                <div>
+                                    <h3>Noodles</h3>       
+                                    <a href="#" id="8" target="_blank">Order</a> 
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>         
+    
+        </section>
+        <!-- <hr> -->
+        <!-- Section 4 -->
+        <section id="contact">
+           <div class="container-fluid">            
+                <div class="resume box proj">
+                    <h2 class="bottom"> <i class="fa-solid fa-phone"></i> Contact </h2>
+                </div>                    
+                <div class="row p-3 d-flex align-items-center justify-content-center">
+                    <div class="col-lg-4 cens p-2">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="auto">
+                            <h4>Location:</h4>
+                            <p class="chng" id="ch1">Karachi,Pakistan</p>
+                        </div>   
+                    </div>
+                    <div class="col-lg-4 cens p-2">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="auto">
+                            <h4>Contact:</h4>
+                            <p class="chng" id="ch2">+92 321 2347886</p>
+                        </div>       
+                    </div>
+                    <div class="col-lg-4 cens p-2">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="auto">
+                            <h4>Email:</h4>
+                            <p class="chng" id="ch3">adilwaheed2222.com@gmail.com</p>
+                        </div>
+                    
+                    </div>
+        
+                </div>
+            </div>        
+        </section>   
+        <!-- Review Crousel Section -->       
+        <section id="review">
+            <div class="container">
+                <div class="main">
+                    <div class="child">
+                        <div class="children">
+                            <h1 class="heading">
+                               Review By Customer
+                            </h1>
+                        </div>
+                        <br>
+                        <div class="children">
+                            <input type="text" class="same" id="input" placeholder="Enter Review">
+                            <input type="button" class="same"  id="btn" value="Add">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="main2">
+                    <div class="child2">
+                        <ul id="list">
+                            <li>Adnan :Very Best App </li>
+                            <li>Farook:Good Product</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <br>
+        <!-- Searching  -->
+        <section>
+            <div class="children">
+                <input type="text" class="same" id="seacrh" placeholder="Search Food">
+                <input type="button" class="same"  id="searc" value="Search" onclick="sear()">
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container foot">
+        
+                        <h5><b>&copy;</b><i>Copy Right 2022</i></h5>
+            </div>        
+    </footer>
+    <!-- Go to Top  -->
+    <button onclick="topFunction()" id="Btn" class="top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Dark Mode -->
+    <button onclick="darkmode()" id="dark" class="dark"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    <!-- <a href="#home" class="top" onclick='dis()'><i class="fa-solid fa-arrow-up"></i></a> -->  
+    </main>
+    
+    <script src="style.js"></script>
+    <script src="style2.js"></script>
+</body>
+
+</html>
